@@ -15,6 +15,7 @@ import Popular from "./Popular";
 import PopTags from "./PopTags";
 import { Link } from "react-router-dom";
 import Background from "./Background";
+import Footer from "../Home/footer";
 
 const Shop = () => {
 const [listMood, setListMood] = useState(false);
@@ -418,6 +419,7 @@ return (
         </div>
         </div>
     </main>
+    <Footer/>
     </div>
 );
 };

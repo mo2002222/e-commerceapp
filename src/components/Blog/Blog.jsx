@@ -1,3 +1,4 @@
+import Footer from "../Home/footer";
 import Background from "../shop/Background";
 import BlogCards from "./BlogCards";
 
@@ -45,6 +46,7 @@ const Blog = () => {
             />
             </div>
         </div>
+        <Footer/>
         </>
     );
 };

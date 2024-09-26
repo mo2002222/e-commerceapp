@@ -10,14 +10,13 @@ import Singleblog from "./components/Blog/Singleblog";
 import AboutUs from "./components/About/Aboutus";
 import Contact from "./components/Contact/Contact";
 import NotFound from "./components/notFind/NotFound";
-import Footer from "./components/Home/footer";
 import Login from "./components/Login/Login";
 import CreateAccount from "./components/Register/Register";
 
 export default function App() {
     return (
         <>
-        <Router>
+        <Router basename="/reactjs-ecommerce-website">
             <Header />
             <Routes>
             <Route exact path="/" element={<Home />} />
@@ -32,7 +31,6 @@ export default function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/Register" element={<CreateAccount />} />
             </Routes>
-            <Footer />
         </Router>
         </>
     );

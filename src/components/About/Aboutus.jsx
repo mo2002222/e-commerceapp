@@ -1,3 +1,4 @@
+import Footer from "../Home/footer";
 import Background from "../shop/Background";
 
 const AboutUs = () => {
@@ -104,6 +105,7 @@ const AboutUs = () => {
             </div>
             </div>
         </div>
+        <Footer/>
         </div>
     );
 };

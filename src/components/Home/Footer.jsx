@@ -11,15 +11,15 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import DevloperInfo from "./DevloperInfo";
 const Footer = () => {
     return (
-        <div>
-        <div className="bg-black" style={{ padding: "100px 0 60px " }}>
+        <div >
+        <div className="bg-black" style={{ padding: "100px 0 60px "}}>
             <div className="main-section container">
             <div
                 className="row justify-content-center"
                 style={{ rowGap: "35px" }}
             >
                 <div className="col-lg-3  col-md-4 col-sm-6 gap-md-0 gap-5 text-white">
-                <h4 className="mb-3 ">About Shopcart</h4>
+                <h4 className="mb-3">About Shopcart</h4>
                 <p style={{ color: "#e7e5e5" }}>
                     Eduaid theme number one world class university in the world
                     there are student are studing always in this university for all

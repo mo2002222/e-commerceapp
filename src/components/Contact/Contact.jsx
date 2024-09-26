@@ -1,3 +1,4 @@
+import Footer from "../Home/footer";
 import Background from "../shop/Background";
 
 const Contact = () => {
@@ -173,6 +174,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
