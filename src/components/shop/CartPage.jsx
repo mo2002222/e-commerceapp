@@ -95,9 +95,6 @@ const CartPage = () => {
     );
   });
 
-  // const HandleCheckOut = ()=>{
-  //   console.log('don');
-  // }
   return (
     <>
       <Background title={"Shop Cart"} desc={"Home  /  Cart"} />
@@ -270,7 +267,6 @@ const CartPage = () => {
             </div>
           </div>
         </main>
-        /
         <MyVerticallyCenteredModal
           show={modalShow}
           onHide={() => setModalShow(false)}

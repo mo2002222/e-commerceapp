@@ -1,24 +1,43 @@
-import { useState } from 'react';
-import './Login.css';
+import { useState } from "react";
+import "./Login.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   // States for email and password
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
   // State for showing error message
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState("");
 
   // Handling form submission
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Example validation (replace with your own logic)
-    if (email === 'test@example.com' && password === 'password') {
-      alert('Login successful!');
-      // Proceed with your login logic (e.g., API calls, navigation)
-    } else {
-      setErrorMessage('Invalid email or password');
+    try {
+      const response = await fetch("http://localhost:3000/login", {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          Email: email,
+          PassWord: password,
+        }),
+      });
+      const result = await response.json();
+      if (response.ok) {
+        setTimeout(() => {
+          navigate("/");
+          location.reload();
+        }, 3000);
+      } else {
+        setErrorMessage(result.error || "invalid Email or Password");
+      }
+    } catch (error) {
+      console.log("error", error);
+      setErrorMessage("Something went wrong. Please try again");
     }
   };
 
@@ -51,8 +70,24 @@ function Login() {
 
         {errorMessage && <p className="error-message">{errorMessage}</p>}
 
-        <button type="submit" className="login-button">Login</button>
+        <button type="submit" className="login-button">
+          Login
+        </button>
       </form>
+      <h6
+        style={{
+          position: "absolute",
+          transform: "translate(-130px,240px)",
+          top: "50%",
+          left: "50%",
+        }}
+      >
+        {" "}
+        not have an account replace to{" "}
+        <Link to={"/Register"}>
+          <span style={{ color: "blue" }}>Sign in</span>
+        </Link>{" "}
+      </h6>
     </div>
   );
 }

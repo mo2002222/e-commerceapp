@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import "./Home.css";
 import CategoryCards from "./CategoryCards";
+import { Link } from "react-router-dom";
 
 const Products = () => {
     return (
@@ -47,9 +48,9 @@ const Products = () => {
                 ></CategoryCards>
             </div>
             <div className="text-center">
-                <div className="btn p-2 rounded border fw-bold my-4 text-black-50 get-started">
+                <Link to={'/shop'}><div className="btn p-2 rounded border fw-bold my-4 text-black-50 get-started">
                 Get Startted Now
-                </div>
+                </div></Link>
             </div>
             </div>
         </Container>

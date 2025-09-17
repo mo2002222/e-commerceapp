@@ -1,15 +1,23 @@
+import { Link } from "react-router-dom";
+import { store } from "../../App";
+import { useContext } from "react";
 const AppSection = () => {
+
+    const {isLogin} = useContext(store)
     return (
         <div style={{ marginTop: "50px" }}>
         <div className="container">
-            <div className="header text-center">
-            <div
-                className="for-free-btn btn mt-3 mb-5 fw-medium px-3"
-                style={{ border: "2px solid #e0e0e0" }}
-            >
-                Sign Up For Free
-            </div>
-            </div>
+            {
+                !isLogin && <div className="header text-center">
+                <Link to={'/Register'}><div
+                    className="for-free-btn btn mt-3 mb-5 fw-medium px-3"
+                    style={{ border: "2px solid #e0e0e0" }}
+                >
+                    Sign Up For Free
+                </div>
+                </Link>
+                </div>
+            }
 
             <div className="title text-center">
             <h3 className="fw-bold">Learn Anytime, Anywhere</h3>

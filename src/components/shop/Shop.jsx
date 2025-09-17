@@ -38,6 +38,7 @@ const handleShowMood = () => {
 };
 useEffect(() => {
     setShopProducts(products);
+    fetch("/Shop").then(res=>{res.json()}).then(data => console.log(data))
 }, []);
 const [currentPage, setCurrentPage] = useState(1);
 const productsPerPage = 10;

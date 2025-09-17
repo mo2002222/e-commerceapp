@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { store } from "../../App";
 const UserState = () => {
   const formStyle = {
     background: "linear-gradient(to bottom, white, transparent)",
@@ -5,6 +7,8 @@ const UserState = () => {
     borderRadius: "8px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
   };
+
+  const { isLogin } = useContext(store);
 
   return (
     <div style={{ marginTop: "50px", position: "relative" }}>
@@ -23,7 +27,10 @@ const UserState = () => {
           style={{ paddingTop: "140px" }}
           className="content row d-flex justify-content-between align-items-center"
         >
-          <div className="col-md-6">
+          <div
+            className="col-md-6"
+            style={{ transform: `${!isLogin ? "0" : "translate(0px, -60px)"}` }}
+          >
             <div
               className="left-section text-md-start text-center"
               style={{ width: "fit-content", lineHeight: "40px" }}
@@ -50,49 +57,51 @@ const UserState = () => {
                   className="justify-content-center"
                   style={{ width: "fit-content" }}
                 >
-                  <div className="">
-                    <div className="form-container" style={formStyle}>
-                      <h2 className="text-center mb-4">Register Now</h2>
-                      <form>
-                        <div className="form-group">
-                          <input
-                            type="text"
-                            className="form-control mb-3"
-                            id="username"
-                            placeholder="username"
-                          />
-                        </div>
-                        <div className="form-group">
-                          <input
-                            type="email"
-                            className="form-control mb-3"
-                            id="email"
-                            placeholder="email"
-                          />
-                        </div>
-                        <div className="form-group">
-                          <input
-                            type="tel"
-                            className="form-control mb-4"
-                            id="phone"
-                            placeholder="phone"
-                          />
-                        </div>
-                        <div className="text-center">
-                          <button
-                            type="submit"
-                            className="btn fw-mediume"
-                            style={{
-                              background: "#FFB300",
-                              padding: "4px 45px",
-                            }}
-                          >
-                            Register Now
-                          </button>
-                        </div>
-                      </form>
+                  {!isLogin && (
+                    <div className="">
+                      <div className="form-container" style={formStyle}>
+                        <h2 className="text-center mb-4">Register Now</h2>
+                        <form>
+                          <div className="form-group">
+                            <input
+                              type="text"
+                              className="form-control mb-3"
+                              id="username"
+                              placeholder="username"
+                            />
+                          </div>
+                          <div className="form-group">
+                            <input
+                              type="email"
+                              className="form-control mb-3"
+                              id="email"
+                              placeholder="email"
+                            />
+                          </div>
+                          <div className="form-group">
+                            <input
+                              type="tel"
+                              className="form-control mb-4"
+                              id="phone"
+                              placeholder="phone"
+                            />
+                          </div>
+                          <div className="text-center">
+                            <button
+                              type="submit"
+                              className="btn fw-mediume"
+                              style={{
+                                background: "#FFB300",
+                                padding: "4px 45px",
+                              }}
+                            >
+                              Register Now
+                            </button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>

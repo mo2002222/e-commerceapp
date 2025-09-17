@@ -124,7 +124,7 @@ const Footer = () => {
                 >
                     <li>Summer sessions</li>
                     <li>Events</li>
-                    <li>/gallery</li>
+                    <li>gallery</li>
                     <li>Forums</li>
                     <li>Privacy Policy</li>
                     <li>Terms Of Us</li>

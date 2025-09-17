@@ -16,7 +16,7 @@ const AboutAsideContent = ({ numbers, desc, children }) => {
     numbers: propTypes.string,
     desc: propTypes.string,
     imgNum: propTypes.number,
-    children: propTypes.oneOfType,
+    children: propTypes.arrayOf(propTypes.node),
 };
 
 export default AboutAsideContent;

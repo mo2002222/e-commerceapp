@@ -1,3 +1,4 @@
+// import { useContext } from "react";
 import About from "./About";
 import AppSection from "./AppSection";
 import Customer from "./Customer";
@@ -7,8 +8,11 @@ import Land from "./Land";
 import Products from "./Products";
 import ProductsCategory from "./ProductsCategory";
 import UserState from "./UserState";
-
+// import { store } from "../../App";
 function Home() {
+
+    // const {isLogin} = useContext(store);
+    
     return (
         <div
         style={{
