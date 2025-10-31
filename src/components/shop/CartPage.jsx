@@ -85,7 +85,7 @@ const CartPage = () => {
         </td>
         <td className="text-center">
           <img
-            src="/src/assets/images/shop/del.png"
+            src="/assets/images/shop/del.png"
             alt=""
             onClick={() => HandleDelet(prod.imgPath)}
             style={{ cursor: "pointer" }}

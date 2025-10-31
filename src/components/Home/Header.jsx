@@ -122,7 +122,7 @@ return (
         <Container>
         <Navbar.Brand href="#">
             <img
-            src="/src\assets\images\logo\logo.png"
+            src="/assets/images/logo/logo.png"
             width="130"
             height="50"
             className="d-inline-block align-top"

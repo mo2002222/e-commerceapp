@@ -34,14 +34,14 @@ const AppSection = () => {
                 <div className="col-sm-6 col-12 d-flex justify-content-center mb-3 mb-md-0">
                 <img
                     style={{ width: "220px", cursor: "pointer", height: "75px" }}
-                    src="src\assets\images\app\01.jpg"
+                    src="/assets/images/app/01.jpg"
                     alt=""
                 />
                 </div>
                 <div className="col-sm-6 col-12 d-flex justify-content-center mb-3 mb-md-0">
                 <img
                     style={{ cursor: "pointer", width: "220px", height: "75px" }}
-                    src="src\assets\images\app\02.jpg"
+                    src="/assets/images/app/02.jpg"
                     alt=""
                 />
                 </div>
@@ -59,42 +59,42 @@ const AppSection = () => {
             <div className="col-lg-2 col-6 col-md-4">
                 <img
                 style={{ width: "120px" }}
-                src="src\assets\images\sponsor\01.png"
+                src="/assets/images/sponsor/01.png"
                 alt=""
                 />
             </div>
             <div className="col-lg-2 col-6 col-md-4">
                 <img
                 style={{ width: "120px" }}
-                src="src\assets\images\sponsor\02.png"
+                src="/assets/images/sponsor/02.png"
                 alt=""
                 />
             </div>
             <div className="col-lg-2 col-6 col-md-4">
                 <img
                 style={{ width: "120px" }}
-                src="src\assets\images\sponsor\03.png"
+                src="/assets/images/sponsor/03.png"
                 alt=""
                 />
             </div>
             <div className="col-lg-2 col-6 col-md-4">
                 <img
                 style={{ width: "120px" }}
-                src="src\assets\images\sponsor\04.png"
+                src="/assets/images/sponsor/04.png"
                 alt=""
                 />
             </div>
             <div className="col-lg-2 col-6 col-md-4">
                 <img
                 style={{ width: "120px" }}
-                src="src\assets\images\sponsor\05.png"
+                src="/assets/images/sponsor/05.png"
                 alt=""
                 />
             </div>
             <div className="col-lg-2 col-6 col-md-4">
                 <img
                 style={{ width: "120px" }}
-                src="src\assets\images\sponsor\06.png"
+                src="/assets/images/sponsor/06.png"
                 alt=""
                 />
             </div>

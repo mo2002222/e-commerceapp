@@ -6,7 +6,7 @@ const Background = ({ title, desc }) => {
         <div
             className="bg-img"
             style={{
-            background: "url(/src/assets/images/pageheader/bg/02.jpg)",
+            background: "url(/assets/images/pageheader/bg/02.jpg)",
             height: "70vh",
             width: "100%",
             backgroundRepeat: "no-repeat",

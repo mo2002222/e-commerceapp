@@ -15,7 +15,7 @@ const UserState = () => {
       <div
         className="bg"
         style={{
-          backgroundImage: "url(src/assets/images/bg-img/07.jpg)",
+          backgroundImage: "url(/assets/images/bg-img/07.jpg)",
           position: "absolute",
           width: "100%",
           height: "100%",

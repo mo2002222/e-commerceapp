@@ -5,7 +5,7 @@ const Reviews = ({ name, imgNum }) => {
     return (
         <div className="d-flex gap-3 align-items-center mb-1">
         <img
-            src={`/src/assets/images/instructor/0${imgNum}.jpg`}
+            src={`/assets/images/instructor/0${imgNum}.jpg`}
             alt=""
             style={{ maxWidth: "65px" }}
         />

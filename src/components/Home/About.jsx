@@ -74,7 +74,7 @@ const About = () => {
                 </div>
                 <div className="col-lg-4 col-md-6 col-sm-12 py-5 d-flex justify-content-center ">
                 <img
-                    src="src/assets/images/instructor/01.png"
+                    src="/assets/images/instructor/01.png"
                     style={{ maxWidth: "300px" }}
                     alt=""
                 />

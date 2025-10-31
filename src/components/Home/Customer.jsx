@@ -17,7 +17,7 @@ return (
         <div
         className="main-section pt-5"
         style={{
-            background: "url(src/assets/images/clients/bg.png)",
+            background: "url(/assets/images/clients/bg.png)",
             backgroundSize: "cover",
             backgroundPosition: "-13px -4px",
             height: "400px",

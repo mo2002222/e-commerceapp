@@ -4,19 +4,19 @@ import Background from "../shop/Background";
 const AboutUs = () => {
     const aboutList = [
         {
-        imgUrl: "/src/assets/images/about/icon/01.jpg",
+        imgUrl: "/assets/images/about/icon/01.jpg",
         imgAlt: "about icon rajibraj91 rajibraj",
         title: "Skilled Instructors",
         desc: "Distinctively provide acces mutfuncto users whereas communicate leveraged services",
         },
         {
-        imgUrl: "/src/assets/images/about/icon/02.jpg",
+        imgUrl: "/assets/images/about/icon/02.jpg",
         imgAlt: "about icon rajibraj91 rajibraj",
         title: "Get Certificate",
         desc: "Distinctively provide acces mutfuncto users whereas communicate leveraged services",
         },
         {
-        imgUrl: "/src/assets/images/about/icon/03.jpg",
+        imgUrl: "/assets/images/about/icon/03.jpg",
         imgAlt: "about icon rajibraj91 rajibraj",
         title: "Online Classes",
         desc: "Distinctively provide acces mutfuncto users whereas communicate leveraged services",
@@ -32,7 +32,7 @@ const AboutUs = () => {
             <div className="col-lg-6 col-12" style={{ marginBottom: "100px" }}>
                 <div className="img-container" style={{ position: "relative" }}>
                 <img
-                    src="src/assets/images/about/01.jpg"
+                    src="/assets/images/about/01.jpg"
                     className="w-75 p-2"
                     alt=""
                     style={{ border: "3px solid rgb(214 214 214 / 22%)" }}
@@ -62,7 +62,7 @@ const AboutUs = () => {
                     }}
                 >
                     <img
-                    src="src/assets/images/about/02.jpg"
+                    src="/assets/images/about/02.jpg"
                     className="w-100"
                     alt=""
                     />

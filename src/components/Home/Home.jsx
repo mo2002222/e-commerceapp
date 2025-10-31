@@ -16,7 +16,7 @@ function Home() {
     return (
         <div
         style={{
-            background: "url(src/assets/images/bg-img/06.jpg)",
+            background: "url(/assets/images/bg-img/06.jpg)",
             height: "100vh",
         }}
         >

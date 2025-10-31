@@ -38,7 +38,7 @@ const MyVerticallyCenteredModal = (props) => {
                 ></span>
                 <img
                 className="mt-3"
-                src="src/assets/images/pyment/64px-Visa_Inc._logo.svg.png"
+                src="/assets/images/pyment/64px-Visa_Inc._logo.svg.png"
                 alt="Visa logo"
                 />
             </div>

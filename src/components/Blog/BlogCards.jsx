@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import propTypes from "prop-types";
 
 const BlogCards = ({ title, imgNum }) => {
-  const imgURL = `src/assets/images/blog/0${imgNum}.jpg`;
+  const imgURL = `/assets/images/blog/0${imgNum}.jpg`;
 
   return (
     <div className="col-lg-4 col-md-6 col-12 mb-3">

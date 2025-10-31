@@ -40,7 +40,7 @@ const CategoryCards = ({ imgNumber, imgName, className }) => {
             </div>
             <img
             className="img-fluid"
-            src={`src/assets/images/category/0${imgNumber}.jpg`}
+            src={`/assets/images/category/0${imgNumber}.jpg`}
             alt={`${imgName}`}
             />
         </div>
