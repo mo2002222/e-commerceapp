@@ -36,7 +36,7 @@ useEffect(() => {
 
 return (
     <store.Provider value={{ isLogin, userData }}>
-    <Router basename="/e-commerceapp">
+    <Router basename="/">
         <Header />
         <Routes>
         <Route exact path="/" element={<Home />} />
