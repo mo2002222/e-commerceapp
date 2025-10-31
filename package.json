@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build": "vite build && cp dist/index.html dist/404.html",
-
+    "build": "node init && vite build && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
