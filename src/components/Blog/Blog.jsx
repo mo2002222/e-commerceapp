@@ -1,4 +1,4 @@
-import Footer from "../Home/footer";
+import Footer from "../Home/Footer";
 import Background from "../shop/Background";
 import BlogCards from "./BlogCards";
 

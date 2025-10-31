@@ -15,7 +15,7 @@ import Popular from "./Popular";
 import PopTags from "./PopTags";
 import { Link } from "react-router-dom";
 import Background from "./Background";
-import Footer from "../Home/footer";
+import Footer from "../Home/Footer";
 
 const Shop = () => {
 const [listMood, setListMood] = useState(false);

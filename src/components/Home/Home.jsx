@@ -2,7 +2,11 @@
 import About from "./About";
 import AppSection from "./AppSection";
 import Customer from "./Customer";
+<<<<<<< HEAD
 import Footer from  "./Footer"
+=======
+import Footer from "./Footer";
+>>>>>>> 407fcd1f34ea7ccff31e97cc80b52c895aa99b4c
 import Header from "./Header";
 import Land from "./Land";
 import Products from "./Products";

@@ -8,7 +8,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "build": "vite build && cp dist/index.html dist/404.html",
+<<<<<<< HEAD
 
+=======
+>>>>>>> 407fcd1f34ea7ccff31e97cc80b52c895aa99b4c
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
